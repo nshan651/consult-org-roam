@@ -69,7 +69,7 @@
     (let* ((title
              (with-current-buffer buffer
                (org-roam-db--file-title)))
-            (bufname (buffer-name buffer))
+            (bufname (buffer-file-name buffer))
             (fhash (consult-org-roam-db--file-hash bufname)))
       (if fhash
         (progn
